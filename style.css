@@ -1,0 +1,328 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    font-family: 'Koulen', cursive;
+    user-select: none;
+}
+
+header{
+    height: 10vh;
+    background-color: #FE5399;
+    color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+h1{
+    font-family: 'Reenie Beanie', cursive;
+    color:#ffbad7;
+}
+
+.fundo{
+    height: 90vh;
+    background-image: url('fotos/fundoceu2.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.coracaodiv {
+    height: fit-content;
+    padding: 80px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    z-index: 1;
+}
+
+.menu-cell{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    z-index: 5;
+    width: 50vw;
+    height: 60vw;
+    background-color: #e1eff8;
+    border-radius: 3%;
+}
+
+.borda{
+    background-color: #e94da8;
+    height: 40px;
+}
+
+.menu-cell-div{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px;
+    height: 600px;
+}
+
+#Resultado-cell{
+    font-size: 4em;
+    margin: 0%;
+    color: #e94da8;
+}
+
+#nome1::placeholder{
+    color: #da8cc2;
+}
+
+#nome2::placeholder{
+    color: #da8cc2;
+}
+
+#titulo{
+    color: #7e185f;
+
+}
+
+#btn2 {
+    border-radius: 40px;
+    background-color: #FE5399;
+    height: fit-content;
+    width: 30vw;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.6em;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: -7px 4px 0px 0px #ff80b5;
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out; 
+}
+
+#btn2:active {
+    box-shadow: 0 0 0 10px rgba(255, 128, 181, 0.4);
+    transform: translate(2px, 2px); 
+}
+
+.xis{
+    height: 50px;
+    width: 400px;
+    z-index: 999;
+    display: flex;
+    justify-content: end;
+    padding: 3%;
+}
+
+.btnX{
+    border-radius: 100%;
+    background-color: #FE5399;
+    height: 2em;
+    width: 2em;
+    border: none;
+    position: absolute;
+    text-decoration: none;
+    font-size: 1.6em;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: -4px 4px 0px 0px #ffabce;
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btnX:active {
+    box-shadow: 0 0 0 10px rgba(255, 149, 193, 0.4);
+    transform: translate(2px, 2px); 
+}
+
+/* ------ CORAÇÃO 1 ------*/
+.coracao {
+    position: relative;
+    height: 50vh;
+    width: auto;
+    text-align: center;
+}
+
+.coracao img {
+    max-width: 100%; 
+    max-height: 100%;
+}
+
+.input-container {
+    position: absolute;
+    top: 40%;
+    background-color: transparent;
+    padding: 10px;
+    color: #fff;
+    transform: rotate(10deg);
+}
+
+input[type="text"] {
+    width: 50%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 2em;
+    padding: 5px;
+    color: #fff;
+    text-align: center;
+}
+
+input[type="text"]::placeholder {
+    color: rgba(250, 250, 250, 0.782);
+}
+
+.deco-result{
+    background-color: #f0f0f0;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Resultado{
+    font-size: 9rem;
+    height: fit-content;
+    color: #e94da8;
+}
+
+.btn1 {
+    border-radius: 40px;
+    background-color: #FE5399;
+    height: 2em;
+    width: 12em;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.6em;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: -7px 4px 0px 0px #ff80b5;
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out; 
+}
+
+.btn1:active {
+    box-shadow: 0 0 0 10px rgba(255, 128, 181, 0.4);
+    transform: translate(2px, 2px); 
+}
+
+/* ------ CORAÇÃO 2 ------*/
+
+.coracao2{
+    height: 50vh;
+    width: auto;
+    position: relative;
+}
+
+.coracao2 img{
+    transform: scaleX(-1);
+    width: 100%;
+    height: 100%;
+}
+
+.input-container2 {
+    position: absolute;
+    top: 36%;
+    left: 35%;
+    background-color: transparent;
+    padding: 10px;
+    color: #fff;
+    transform: rotate(-10deg);
+}
+
+/*---- BANDEIRA -----*/
+
+.bandeira {
+    width: 400px;
+    height: 500px;
+    background-color: #ff80b5;
+    display: flex;
+    align-items: center;
+    transform: translateY(-100%);
+    animation: none; 
+    transition: transform 1s ease-in-out;
+    position: absolute;
+    z-index: 3;
+    flex-direction: column;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
+}
+
+.divisao{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.bandeira.aparecer {
+    transform: translateY(0);
+    display: flex;
+    flex-direction: column;
+}
+
+#mais{
+    font-size: 6em;
+    color: #e94da8;
+}
+
+/* ---- FIM ----*/
+
+.btnC{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 800px) {
+   
+    .coracaodiv{
+        display: none;
+    }
+
+    .btnC{
+        display: none;
+    }
+
+    .menu-cell-div{
+        display: flex;
+    }
+
+    .bandeira.aparecer{
+        display: none;
+    }
+    
+    .bandeira{
+        display: none;
+    }
+
+    #Resultado-cell{
+        font-size: 8em;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .menu-cell{
+        height: 60vh;
+    }
+
+    #btn2{
+        font-size: 1.5em;
+        height: 9vh;
+    }
+
+    #Resultado-cell{
+        font-size: 6em;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+
+    #btn2{
+        font-size: 1.2em;
+    }
+}
+
+
